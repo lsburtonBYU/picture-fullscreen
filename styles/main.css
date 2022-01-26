@@ -1,0 +1,37 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+picture img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+article {
+  margin: 0 2rem;
+}
+
+picture,
+h1 {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+h1 {
+  font-size: clamp(36px, 8vw, 92px);
+  color: #fff;
+  align-self: center;
+  justify-self: center;
+}
